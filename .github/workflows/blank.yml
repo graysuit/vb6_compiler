@@ -26,11 +26,18 @@ jobs:
       - uses: actions/checkout@v2
 
       # Runs a single command using the runners shell
-      - name: Compile
-        run: cmd.exe /c compile.bat
-
-      - name: Upload 
-        uses: actions/upload-artifact@v1
-        with:
-          name: Release
-          path: output
+      - name: clone
+        run: git clone https://github.com/graysuit/vb6_compiler.git
+      
+      - name: dir
+        run: cmd.exe /c dir
+        
+      # Runs a single command using the runners shell
+      #- name: Compile
+      #  run: cmd.exe /c compile.bat
+#
+      #- name: Upload 
+      #  uses: actions/upload-artifact@v1
+      #  with:
+      #    name: Release
+      #    path: output
