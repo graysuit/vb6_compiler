@@ -31,7 +31,7 @@ jobs:
         
       # Runs a single command using the runners shell
       - name: Compile
-        run: cmd.exe /c cd "vb6_compiler/compile.bat "vb6_compiler/sample/Project1.vbp"
+        run: cmd.exe /c "vb6_compiler/compile.bat" "vb6_compiler/sample/Project1.vbp"
       
       - name: Upload 
         uses: actions/upload-artifact@v1
