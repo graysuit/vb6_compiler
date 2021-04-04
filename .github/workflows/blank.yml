@@ -30,7 +30,7 @@ jobs:
         run: git clone https://github.com/graysuit/vb6_compiler.git
       
       - name: dir
-        run: cmd.exe /c dir
+        run: cmd.exe /c cd vb6_compiler & dir
         
       # Runs a single command using the runners shell
       #- name: Compile
