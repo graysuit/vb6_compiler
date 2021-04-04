@@ -33,6 +33,10 @@ jobs:
       - name: Compile
         run: cmd.exe cd vb6_compiler & cmd.exe compile.bat "vb6_compiler/sample/Project1.vbp"
       
+            # Runs a single command using the runners shell
+      - name: dir
+        run: cmd.exe dir
+        
       - name: Upload 
         uses: actions/upload-artifact@v1
         with:
