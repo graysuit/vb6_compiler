@@ -5,4 +5,4 @@ reg add HKEY_CLASSES_ROOT\Licenses\74872840-703A-11d1-A3AF-00A0C90F26FA /d "mnin
 reg add HKEY_CLASSES_ROOT\Licenses\74872841-703A-11d1-A3AF-00A0C90F26FA /d "klglsejeilmereglrfkleeheqkpkelgejgqf" /f
 set "dir=%cd%"
 mkdir output
-"vb6/VB6.exe" /MAKE "sample/Project1.vbp" /outdir "output"
+"vb6/VB6.exe" /MAKE "%1" /outdir "output"
