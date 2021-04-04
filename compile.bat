@@ -2,4 +2,4 @@
 regedit.exe /s register.reg
 set "dir=%cd%"
 mkdir output
-"vb6/VB6.exe" /MAKE "sample/Project1.vbp" /outdir "output"
+"vb6/VB6.exe" /MAKE "sample/Project1.vbp" /outdir "output" /out "output/abc.txt"
